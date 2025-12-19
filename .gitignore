@@ -1,0 +1,15 @@
+# Ignore data and checkpoints
+sr3_training_data_*
+ddpm_training_data_*
+sr3_runs/
+MoS2_Nanowire/MoS2_0510_1/
+*.pt
+*.tif
+*.h5
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

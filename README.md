@@ -1,12 +1,12 @@
 # MoS2 SR3 Super-Resolution (Hackathon)
 
-Minimal, end-to-end pipeline for conditional diffusion (SR3) on MoS2 STEM patches. Only SR3 is included; no unconditional DDPM.
+Minimal, end-to-end pipeline for conditional diffusion (SR3) on MoS2 STEM patches.
 
 ## What’s here
 - `MoS2_Nanowire/generate_ddpm_patches.py`: build 128×128 float TIFF patches from `MoS2_0510_1` with resampling + percentile norm.
 - `sr3_training_data_128_resampled_nofilt/`: prepared training patches (resampled, p1/p99 ~ 2/98).
 - `train_sr3.py`: SR3 trainer (blur→downsample→shot noise→Gaussian noise→upsample as LR condition).
-- `MoS2_SR3_walkthrough.ipynb`: English notebook showing data prep, quick viz, training, and triplet visualization.
+- `MoS2_SR3_walkthrough.ipynb`: notebook showing data prep, quick viz, training, and triplet visualization.
 - `sr3_runs/`: checkpoints and sample grids go here (e.g., `mos2_sr3_fast_rerun`).
 
 
